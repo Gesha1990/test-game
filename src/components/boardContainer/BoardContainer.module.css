@@ -1,0 +1,10 @@
+
+.main{
+  height: 100%;
+  display: grid;
+  grid-template-columns:1fr 500px;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas: 'form leaderBoard' 'gameBoard leaderBoard';
+
+}
+

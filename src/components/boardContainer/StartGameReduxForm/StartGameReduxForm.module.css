@@ -1,0 +1,29 @@
+.form{
+  grid-area: form;
+  margin: 20px;
+}
+
+.gameMode {
+  background-color: #e9eeee;
+  cursor: pointer;
+}
+
+.gameMode, .name, .playBtn {
+  margin-left: 10px;
+  border-radius: 10px;
+  outline: none;
+  width: 140px;
+  height: 40px;
+  border: none;
+
+}
+.name{
+  background-color: #f5fafa;
+
+}
+
+.playBtn {
+  background-color: #b6bbbb;
+  cursor: pointer;
+}
+

@@ -1,0 +1,13 @@
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-weight: bold;
+}
+.square:focus {
+  outline: none;
+}
+
+.squareclick{
+  background: #0c8603;
+}
