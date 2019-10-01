@@ -2,7 +2,7 @@
   "name": "test-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gesha1990.github.io/test-game/",
+  "homepage": "https://gesha1990.github.io/test-game",
   "dependencies": {
     "axios": "^0.19.0",
     "moment": "^2.24.0",
