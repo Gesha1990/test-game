@@ -1,33 +1,30 @@
-.LeadersList{
+.leaderBoard{
   grid-area:  leaderBoard;
   margin: 20px;
   margin-right: 60px ;
   font-size: 20px;
-
-
 }
 
-.LeadersList h1 {
+.leadersList h1 {
   margin: 0;
 }
-
-.list{
+.leadersList{
   display: block;
   list-style: none;
   padding: 0;
   background-color: #e9eeee;
 }
 
-.li {
+.leaderBoard__item {
   border-bottom: 2px solid #fffbfd;
   display: flex;
   justify-content: space-between;
   padding: 5px;
 }
 
-.winner{
+leaderBoard__winner{
   float: left;
 }
-.date{
+.leaderBoard__date{
   float: right;
 }

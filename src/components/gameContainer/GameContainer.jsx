@@ -1,18 +1,20 @@
 import React from 'react';
-import style from './BoardContainer.module.css';
+import  './GameContainer.css';
 import {connect} from 'react-redux';
 import {
   setSquaresAC, randomSquaresAC, clickedSquaresAC, setTimeIsOverAC, getWinnersThunkCreator,
   getSettingsThunkCreator, setNumberSquaresAC, putWinnerThunkCreator, restartGameAC
 } from "../../redux/boardReducer";
-import StartGameReduxForm from "./StartGameReduxForm/StartGameReduxForm";
-import GameBoard from "./BoardGame/GameBoard";
-import LeaderBord from "./LeaderBoard/LeaderBoard";
+
+
 import Loader from "../common/Loader";
 import moment from "moment";
+import GameMenu from "./GameMenu/GameMenu";
+import GameBoard from "./GameBoard/GameBoard";
+import GameLeader from "./GameLeader/GameLeader";
 
 
-class BoardContainer extends React.Component {
+class GameContainer extends React.Component {
   constructor() {
     super();
     this.intervalIds = [];
@@ -124,11 +126,12 @@ class BoardContainer extends React.Component {
     }
 
     return (
-      <div className={style.main}>
-        <StartGameReduxForm onSubmit={this.startGame} restart={this.props.restart}/>
-        <GameBoard squares={this.props.squares} getSquareColor={this.getSquareColor}
+      <div className="mainPageTemplate">
+        <GameMenu onSubmit={this.startGame} restart={this.props.restart}/>
+        < GameBoard squares={this.props.squares} getSquareColor={this.getSquareColor}
                    clickedSquaresAC={this.props.clickedSquaresAC} numbersquares={this.props.numbersquares}/>
-        <LeaderBord winners={this.props.winners}/>
+        <GameLeader winners={this.props.winners}/>
+
       </div>
     )
   }
@@ -156,4 +159,4 @@ const mapDispatchToProps = {
   restartGameAC
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(BoardContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(GameContainer)

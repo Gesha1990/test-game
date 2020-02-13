@@ -1,25 +1,24 @@
-import * as axios from "axios/index";
+import * as axios from 'axios/index'
 
 const instance = axios.create({
   baseURL: 'http://starnavi-frontend-test-task.herokuapp.com/',
   headers: {
 
   }
-});
+})
 
 export const winnersAPI = {
-  getWinners() {
+  getWinners () {
     return instance.get('winners')
       .then(response => response.data)
   },
-  getSettings() {
+  getSettings () {
     return instance.get('game-settings')
       .then(response => response.data)
   },
-  putWinner(winner, date) {
-    return instance.post('winners', { winner, date})
+  putWinner (winner, date) {
+    return instance.post('winners', { winner, date })
       .then(response => response)
   }
-
 
 }

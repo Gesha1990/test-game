@@ -1,13 +1,10 @@
-import React from 'react';
-import './App.css';
-import BoardContainer from "./components/boardContainer/BoardContainer";
+import React from 'react'
+import GameContainer from './components/gameContainer/GameContainer'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <BoardContainer />
-    </div>
-  );
+    <GameContainer />
+  )
 }
 
-export default App;
+export default App

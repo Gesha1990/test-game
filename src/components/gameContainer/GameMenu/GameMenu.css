@@ -1,14 +1,8 @@
-.form{
+.menu{
   grid-area: form;
   margin: 20px;
 }
-
-.gameMode {
-  background-color: #e9eeee;
-  cursor: pointer;
-}
-
-.gameMode, .name, .playBtn {
+.menu__gameMode, .memu__playerName, .menu__playBtn {
   margin-left: 10px;
   border-radius: 10px;
   outline: none;
@@ -17,12 +11,15 @@
   border: none;
 
 }
-.name{
+.menu__gameMode {
+  background-color: #e9eeee;
+  cursor: pointer;
+}
+.memu__playerName{
   background-color: #f5fafa;
 
 }
-
-.playBtn {
+.menu__playBtn {
   background-color: #b6bbbb;
   cursor: pointer;
 }
