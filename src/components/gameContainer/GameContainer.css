@@ -1,8 +1,13 @@
-.mainPageTemplate{
+.gameContainerWrapper{
   height: 100%;
-  display: grid;
-  grid-template-columns:1fr 500px;
-  grid-template-rows: 200px 1fr;
-  grid-template-areas: 'form leaderBoard' 'gameBoard leaderBoard';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.menuAndBoardWrapper{
+  display: flex;
 
+}
+table{
+  border-collapse: collapse
+}

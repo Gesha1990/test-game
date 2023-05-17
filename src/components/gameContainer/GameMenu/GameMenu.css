@@ -1,25 +1,20 @@
 .menu{
-  grid-area: form;
-  margin: 20px;
+  margin:  20px 0px;
 }
-.menu__gameMode, .memu__playerName, .menu__playBtn {
-  margin-left: 10px;
+.gameMode, .playBtn {
   border-radius: 10px;
+  margin-right: 10px;
   outline: none;
   width: 140px;
   height: 40px;
   border: none;
 
 }
-.menu__gameMode {
+.gameMode {
   background-color: #e9eeee;
   cursor: pointer;
 }
-.memu__playerName{
-  background-color: #f5fafa;
-
-}
-.menu__playBtn {
+.playBtn {
   background-color: #b6bbbb;
   cursor: pointer;
 }
